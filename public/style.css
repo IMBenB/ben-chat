@@ -73,5 +73,10 @@ body {
         height: 580px;
         overflow: scroll;  
     }
- 
+    .userMessage{
+        color: #f11313;
+        font-size: 1.1rem;
+        padding-left: 12px;
+        
+    }
 }
