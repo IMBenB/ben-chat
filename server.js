@@ -5,6 +5,28 @@ app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
+
+
+
+const fs=require('fs')
+
+
+app.get('/welcome', (req, res)=>{
+    try{
+      fs.readFile('./public/welcome.html','utf8',(err,data)=>{
+        if (err) throw err
+        // console.log(data)
+        res.send(`${data}`);
+      })
+    } catch(err){
+      console.log(err)
+    }
+})
+
+
+
+
+
 let message=[{user:'start chat', message:'now'}];
 
 app.get('/content', (req,res)=>{

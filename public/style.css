@@ -17,10 +17,8 @@ body {
     border: 2px blue solid;
     background: wheat;
     box-shadow: 10px 10px;
-    min-height: 2rem;
+    height: 2rem;
     border-radius: 25px;
-   
-    
     }
 .userName {
     height: 20px;
@@ -34,13 +32,13 @@ body {
     padding-left: 11px;
 
 }
-.message{
+.userMessage{
     color: #f11313;
-    font-size: 1.3rem;
+    font-size: 2rem;
     padding-left: 12px;
-        
+    
 }
-.userMessage {
+.message {
     height: 20px;
     width: 700px;
     font-size: 1rem;
@@ -50,7 +48,16 @@ body {
     position: fixed;
     bottom: 10px;
 }
-
+.theName{
+    position: fixed;
+    top: 200px;
+    left: 150px;
+}
+.enterButton{
+    position: fixed;
+    top: 200px;
+    left: 300px;
+}
 .wrapper{
     margin-bottom: 100px;
 }
@@ -66,7 +73,7 @@ body {
         width: 80px;
         font-size: 1rem;
     }
-    .userMessage {
+    .message {
         height: 20px;
         width: 200px;
         font-size: 1rem;
@@ -75,10 +82,5 @@ body {
         height: 580px;
         overflow: scroll;  
     }
-    .message{
-        color: #f11313;
-        font-size: 1.1rem;
-        padding-left: 12px;
-        
-    }
+ 
 }
