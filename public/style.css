@@ -24,7 +24,7 @@ color: #000000a3;
     border: 2px blue solid;
     background: wheat;
     box-shadow: 10px 10px;
-    height: 2rem;
+    min-height: 2rem;
     border-radius: 25px;
     }
 .userName {
@@ -39,13 +39,13 @@ color: #000000a3;
     padding-left: 11px;
 
 }
-.userMessage{
+.message{
     color: #f11313;
     font-size: 2rem;
     padding-left: 12px;
     
 }
-.message {
+.userMessage {
     height: 20px;
     width: 700px;
     font-size: 1rem;
@@ -55,16 +55,7 @@ color: #000000a3;
     position: fixed;
     bottom: 10px;
 }
-.theName{
-    /* position: fixed;
-    top: 200px;
-  */
 
-}
-.enterButton{
-    /* position: fixed; */
- 
-}
 .wrapper{
     margin-bottom: 100px;
 }
@@ -75,13 +66,42 @@ color: #000000a3;
     width: 360px;
     background: rgb(52, 52, 226);
     }
-    .userName {
-        height: 20px;
+    .contentLine{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 1.1rem;
+        border: 2px blue solid;
+        background: wheat;
+        box-shadow: 10px 10px;
+        min-height: 2rem;
+        border-radius: 25px;
+        }
+    
+.userName {
+    height: 20px;
+    width: 60px;
+    font-size: 1rem;
+}
+
+.userMessage {
+    height: 20px;
+    width: 200px;
+    font-size: 1rem;
+}
+
+    .head{
+        font-size: 3rem;
+        text-align: center;
+        margin-top:2rem;
+        color: #000000a3;
+    }
+    .name {
+  
         width: 80px;
         font-size: 1rem;
     }
     .message {
-        height: 20px;
+
         width: 200px;
         font-size: 1rem;
     }

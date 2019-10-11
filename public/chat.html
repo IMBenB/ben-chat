@@ -17,7 +17,7 @@
             <footer class="textEnter">
                 <form method="get" onsubmit="text(event)" id="myForm">
                     <input class="userName" type="text" name="user" placeholder="user name">
-                    <input class="message" name="message" type="text" placeholder="insert message">
+                    <input class="userMessage" name="message" type="text" placeholder="insert message">
                     <input type="submit" value="send">
                 </form>
             </footer>
@@ -81,7 +81,7 @@ function updateScroll(){
 
         data.forEach(elm => {
             console.dir(data)
-            htmlRoot += `<div class="contentLine"><div class="Name">${elm.user} </div>: <div class="userMessage"> ${elm.message}</div></div>`;
+            htmlRoot += `<div class="contentLine"><div class="Name">${elm.user} </div>: <div class="message"> ${elm.message}</div></div>`;
         })
 
         document.querySelector('#print').innerHTML = htmlRoot;
